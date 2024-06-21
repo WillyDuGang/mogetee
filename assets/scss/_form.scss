@@ -1,0 +1,179 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2{
+    text-transform: uppercase;
+  }
+  form{
+    .info{
+      display: none;
+    }
+    label:not(.dialog-btn), input:not([type="checkbox"],  [type="radio"]), textarea{
+      width: 95%;
+    }
+    select{
+      width: 100%;
+    }
+    textarea{
+      max-width: 95%;
+      min-width: 95%;
+    }
+    label{
+      font-weight: bold;
+    }
+    textarea{
+      font-family: helvetica, serif;
+    }
+    li{
+      padding-top: 1.56rem;
+      h3{
+        font-size: 1rem;
+      }
+    }
+    .checkbox{
+      display: flex;
+      align-items: center;
+      padding-top: 0.9rem;
+      input{
+        margin-right: .4rem;
+      }
+    }
+    .file{
+      input::file-selector-button {
+        height: 100%;
+      }
+      input{
+        cursor: pointer;
+      }
+    }
+    input:not(.btn-red), textarea, select, fieldset{
+      border-radius: 0;
+      border: unset;
+      background-color: #e6e6e6;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+    }
+    input, select{
+      height: 1.9rem;
+    }
+    button, .dialog-btn{
+      border-radius: 0;
+      padding: 0.4375rem 3.12rem;
+      font-size: .8em;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    fieldset{
+      display: flex;
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 0.9rem;
+      legend{
+        margin: 0;
+        font-weight: bold;
+      }
+      label{
+        display: flex;
+        align-items: center;
+        width: calc(100%/3) !important;
+        input{
+          margin-right: .4rem;
+        }
+      }
+    }
+  }
+}
+.form-only{
+  @extend .form;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  .back-btn-container{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+}
+.image-form{
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  .left, .right{
+    width: 50%;
+  }
+  .left{
+    img{
+      object-fit: contain;
+      width: 100%;
+      height: 28rem;
+    }
+  }
+  .right{
+    margin-left: 1.9rem;
+    @extend .form;
+    .form-link{
+      text-align: right;
+      padding-top: 0.31rem;
+      a{
+        color: black;
+      }
+    }
+  }
+}
+
+
+
+.dialog-container {
+  margin-top: 1.56rem;
+  .dialog {
+    display: none;
+    .btn-red{
+      margin-right: 0.5em;
+    }
+    input, button{
+      width: unset !important;
+    }
+  }
+  .dialog-btn {
+    display: inline-flex;
+  }
+  .dialog-toggle {
+    display: none !important;
+    &:checked {
+      + .dialog{
+        display: flex;
+        input, button{
+          z-index: 10;
+        }
+        .overlay{
+          z-index: 0;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          background-color: red;
+          top: 0;
+          left: 0;
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+        .btn-green{
+          padding: 0.06rem 0.4rem;
+        }
+      }
+      ~ .dialog-btn{
+        display: none;
+      }
+    }
+  }
+}
+
+.forget-password-container .form-list{
+  position: relative;
+}

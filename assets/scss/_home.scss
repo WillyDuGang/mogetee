@@ -1,0 +1,142 @@
+
+.home-main {
+  color: white;
+  .background-video {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+  }
+  .wave{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    div {
+      padding-bottom: 6.25rem;
+      h1{
+        font-size: 4em;
+      }
+      h2 {
+        margin: 2.2rem 0;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          padding-right: 0.9rem;
+          a {
+            padding: 0.62rem 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-about-us {
+  background-image: linear-gradient(to top, rgba(59, 2, 2, 0.6), rgba(59, 2, 2, 0.6)), url("../images/backgrounds/bubble-tea-background-1.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
+  .wave {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+  }
+  .container {
+    height: 37.5rem;
+    display: flex;
+    padding-top: 3.12rem;
+    padding-bottom: 3.12rem;
+    position: relative;
+    .left {
+      img {
+        height: 70%;
+      }
+    }
+
+    .right {
+      padding-right: 3.12rem;
+      padding-left: 3.12rem;
+      text-align: center;
+      h2 {
+        margin: 2.2rem;
+      }
+    }
+
+    .right, .left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+.home-our-goals {
+  background-color: white;
+  .container {
+    padding-top: 3.12rem;
+    padding-bottom: 3.12rem;
+    text-align: center;
+    h2{
+      margin-bottom: 2.2rem;
+    }
+    section {
+      display: flex;
+      article {
+        width: calc(100% / 3);
+        img {
+          width: 6.25rem;
+        }
+        h4{
+          margin-top: 1.56rem;
+        }
+      }
+    }
+  }
+}
+.home-latest-news{
+  background-color: $darkOrange;
+  color: white;
+  .container{
+    padding-top: 3.12rem;
+    padding-bottom: 3.12rem;
+    h2{
+      text-align: center;
+      margin-bottom: 2.2rem;
+    }
+    .new-list{
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      hr{
+        @extend .dashed-border-b;
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        width: 80%;
+      }
+    }
+    .see-more{
+      text-align: center;
+      width: 30%;
+      margin-right: auto;
+      margin-left: auto;
+      a{
+        padding: 0.62rem 1.25rem;
+      }
+    }
+  }
+}

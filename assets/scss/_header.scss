@@ -1,0 +1,123 @@
+.header {
+  background-color: $yellow;
+
+  .container {
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: bubblegum, serif;
+    img {
+      height: 100%;
+    }
+
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      font-size: 1.5em;
+    }
+    .dropdown{
+      position: relative;
+      &:hover{
+        background-color: white;
+        .dropdown-toggle{
+          border-bottom: solid black 0.06rem;
+        }
+      }
+      .dropdown-toggle {
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        background-color: unset;
+        height: 100%;
+        font-family: bubblegum, serif;
+        padding-left: 1rem;
+        font-size: 1.5em;
+        img{
+          border-radius: 50%;
+          border: solid white 0.12rem;
+          height: 3.45rem;
+          width: 3.45rem;
+          margin-right: 1rem;
+          margin-left: 1rem;
+          object-fit: cover;
+        }
+
+      }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        width: 100%;
+        a{
+          padding: 0.6rem 1rem;
+        }
+        a:hover {
+          padding-left: 1.5rem;
+          background-color: $darkOrange;
+          color: white;
+          transition: 0.3s;
+        }
+      }
+      &:hover{
+        .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+    .search-bar{
+      width: 30%;
+    }
+  }
+}
+
+.nav-bar {
+  border-top: solid black 0.06rem;
+  background-color: white;
+
+  .container {
+    height: 1.9rem;
+
+    ul {
+      display: flex;
+      height: 100%;
+
+      li {
+        height: 100%;
+
+        a {
+          text-decoration: none;
+          color: black;
+          display: flex;
+          height: 100%;
+          align-items: center;
+          padding: 0 0.9rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+.page-header{
+  height: 12.5rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  h1{
+    font-size: 2.8em;
+  }
+}

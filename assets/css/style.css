@@ -1,0 +1,1130 @@
+@font-face {
+  font-family: bubblegum;
+  src: url("../fonts/Bubblegum.ttf");
+}
+@font-face {
+  font-family: helvetica;
+  src: url("../fonts/Helvetica.ttf");
+}
+.header {
+  background-color: #F2B705;
+}
+.header .container {
+  height: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: bubblegum, serif;
+}
+.header .container img {
+  height: 100%;
+}
+.header .container a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+.header .container .dropdown {
+  position: relative;
+}
+.header .container .dropdown:hover {
+  background-color: white;
+}
+.header .container .dropdown:hover .dropdown-toggle {
+  border-bottom: solid black 0.06rem;
+}
+.header .container .dropdown .dropdown-toggle {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: unset;
+  height: 100%;
+  font-family: bubblegum, serif;
+  padding-left: 1rem;
+  font-size: 1.5em;
+}
+.header .container .dropdown .dropdown-toggle img {
+  border-radius: 50%;
+  border: solid white 0.12rem;
+  height: 3.45rem;
+  width: 3.45rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  object-fit: cover;
+}
+.header .container .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+}
+.header .container .dropdown .dropdown-menu a {
+  padding: 0.6rem 1rem;
+}
+.header .container .dropdown .dropdown-menu a:hover {
+  padding-left: 1.5rem;
+  background-color: #D95204;
+  color: white;
+  transition: 0.3s;
+}
+.header .container .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.header .container .search-bar {
+  width: 30%;
+}
+
+.nav-bar {
+  border-top: solid black 0.06rem;
+  background-color: white;
+}
+.nav-bar .container {
+  height: 1.9rem;
+}
+.nav-bar .container ul {
+  display: flex;
+  height: 100%;
+}
+.nav-bar .container ul li {
+  height: 100%;
+}
+.nav-bar .container ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 0.9rem;
+  font-weight: bold;
+}
+
+.page-header {
+  height: 12.5rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.page-header h1 {
+  font-size: 2.8em;
+}
+
+.footer {
+  border-top: solid black 0.06rem;
+}
+.footer .container {
+  font-size: 0.9rem;
+  height: 25rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+.footer .container .left, .footer .container .center, .footer .container .right {
+  width: 33.3333333333%;
+}
+.footer .container .left h3, .footer .container .center h3, .footer .container .right h3 {
+  margin-bottom: 1.25rem;
+}
+.footer .container .bottom {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  height: 1.9rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.footer .container .bottom p {
+  margin: auto;
+}
+.footer .container .left a {
+  display: block;
+  padding: 0.62rem 1.25rem;
+  margin-top: 1.25rem;
+}
+.footer .container .center p {
+  color: #9b9892;
+}
+.footer .container .center img {
+  width: 40%;
+}
+.footer .container .right hr {
+  border: solid black 0.06rem;
+  width: 80%;
+}
+.footer .container .right ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer .container .right ul li {
+  padding-bottom: 1.25rem;
+  width: 33.3333333333%;
+}
+.footer .container .right ul li a {
+  color: black;
+}
+.footer .container .right section h3 {
+  padding-top: 1.25rem;
+}
+
+.home-main {
+  color: white;
+}
+.home-main .background-video {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+.home-main .wave {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.home-main .container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.home-main .container div {
+  padding-bottom: 6.25rem;
+}
+.home-main .container div h1 {
+  font-size: 4em;
+}
+.home-main .container div h2 {
+  margin: 2.2rem 0;
+}
+.home-main .container div ul {
+  display: flex;
+}
+.home-main .container div ul li {
+  padding-right: 0.9rem;
+}
+.home-main .container div ul li a {
+  padding: 0.62rem 1.25rem;
+}
+
+.home-about-us {
+  background-image: linear-gradient(to top, rgba(59, 2, 2, 0.6), rgba(59, 2, 2, 0.6)), url("../images/backgrounds/bubble-tea-background-1.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
+}
+.home-about-us .wave {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+}
+.home-about-us .container {
+  height: 37.5rem;
+  display: flex;
+  padding-top: 3.12rem;
+  padding-bottom: 3.12rem;
+  position: relative;
+}
+.home-about-us .container .left img {
+  height: 70%;
+}
+.home-about-us .container .right {
+  padding-right: 3.12rem;
+  padding-left: 3.12rem;
+  text-align: center;
+}
+.home-about-us .container .right h2 {
+  margin: 2.2rem;
+}
+.home-about-us .container .right, .home-about-us .container .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-our-goals {
+  background-color: white;
+}
+.home-our-goals .container {
+  padding-top: 3.12rem;
+  padding-bottom: 3.12rem;
+  text-align: center;
+}
+.home-our-goals .container h2 {
+  margin-bottom: 2.2rem;
+}
+.home-our-goals .container section {
+  display: flex;
+}
+.home-our-goals .container section article {
+  width: 33.3333333333%;
+}
+.home-our-goals .container section article img {
+  width: 6.25rem;
+}
+.home-our-goals .container section article h4 {
+  margin-top: 1.56rem;
+}
+
+.home-latest-news {
+  background-color: #D95204;
+  color: white;
+}
+.home-latest-news .container {
+  padding-top: 3.12rem;
+  padding-bottom: 3.12rem;
+}
+.home-latest-news .container h2 {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+.home-latest-news .container .new-list {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.home-latest-news .container .new-list hr {
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+  width: 80%;
+}
+.home-latest-news .container .see-more {
+  text-align: center;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.home-latest-news .container .see-more a {
+  padding: 0.62rem 1.25rem;
+}
+
+.form, .image-form .right, .form-only {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form h2, .image-form .right h2, .form-only h2 {
+  text-transform: uppercase;
+}
+.form form .info, .image-form .right form .info, .form-only form .info {
+  display: none;
+}
+.form form label:not(.dialog-btn), .image-form .right form label:not(.dialog-btn), .form-only form label:not(.dialog-btn), .form form input:not([type=checkbox], [type=radio]), .image-form .right form input:not([type=checkbox], [type=radio]), .form-only form input:not([type=checkbox], [type=radio]), .form form textarea, .image-form .right form textarea, .form-only form textarea {
+  width: 95%;
+}
+.form form select, .image-form .right form select, .form-only form select {
+  width: 100%;
+}
+.form form textarea, .image-form .right form textarea, .form-only form textarea {
+  max-width: 95%;
+  min-width: 95%;
+}
+.form form label, .image-form .right form label, .form-only form label {
+  font-weight: bold;
+}
+.form form textarea, .image-form .right form textarea, .form-only form textarea {
+  font-family: helvetica, serif;
+}
+.form form li, .image-form .right form li, .form-only form li {
+  padding-top: 1.56rem;
+}
+.form form li h3, .image-form .right form li h3, .form-only form li h3 {
+  font-size: 1rem;
+}
+.form form .checkbox, .image-form .right form .checkbox, .form-only form .checkbox {
+  display: flex;
+  align-items: center;
+  padding-top: 0.9rem;
+}
+.form form .checkbox input, .image-form .right form .checkbox input, .form-only form .checkbox input {
+  margin-right: 0.4rem;
+}
+.form form .file input::file-selector-button, .image-form .right form .file input::file-selector-button, .form-only form .file input::file-selector-button {
+  height: 100%;
+}
+.form form .file input, .image-form .right form .file input, .form-only form .file input {
+  cursor: pointer;
+}
+.form form input:not(.btn-red), .image-form .right form input:not(.btn-red), .form-only form input:not(.btn-red), .form form textarea, .image-form .right form textarea, .form-only form textarea, .form form select, .image-form .right form select, .form-only form select, .form form fieldset, .image-form .right form fieldset, .form-only form fieldset {
+  border-radius: 0;
+  border: unset;
+  background-color: #e6e6e6;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+.form form input, .image-form .right form input, .form-only form input, .form form select, .image-form .right form select, .form-only form select {
+  height: 1.9rem;
+}
+.form form button, .image-form .right form button, .form-only form button, .form form .dialog-btn, .image-form .right form .dialog-btn, .form-only form .dialog-btn {
+  border-radius: 0;
+  padding: 0.4375rem 3.12rem;
+  font-size: 0.8em;
+}
+.form form button:hover, .image-form .right form button:hover, .form-only form button:hover, .form form .dialog-btn:hover, .image-form .right form .dialog-btn:hover, .form-only form .dialog-btn:hover {
+  cursor: pointer;
+}
+.form form fieldset, .image-form .right form fieldset, .form-only form fieldset {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin-top: 0.9rem;
+}
+.form form fieldset legend, .image-form .right form fieldset legend, .form-only form fieldset legend {
+  margin: 0;
+  font-weight: bold;
+}
+.form form fieldset label, .image-form .right form fieldset label, .form-only form fieldset label {
+  display: flex;
+  align-items: center;
+  width: 33.3333333333% !important;
+}
+.form form fieldset label input, .image-form .right form fieldset label input, .form-only form fieldset label input {
+  margin-right: 0.4rem;
+}
+
+.form-only {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.form-only .back-btn-container {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.image-form {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+}
+.image-form .left, .image-form .right {
+  width: 50%;
+}
+.image-form .left img {
+  object-fit: contain;
+  width: 100%;
+  height: 28rem;
+}
+.image-form .right {
+  margin-left: 1.9rem;
+}
+.image-form .right .form-link {
+  text-align: right;
+  padding-top: 0.31rem;
+}
+.image-form .right .form-link a {
+  color: black;
+}
+
+.dialog-container {
+  margin-top: 1.56rem;
+}
+.dialog-container .dialog {
+  display: none;
+}
+.dialog-container .dialog .btn-red {
+  margin-right: 0.5em;
+}
+.dialog-container .dialog input, .dialog-container .dialog button {
+  width: unset !important;
+}
+.dialog-container .dialog-btn {
+  display: inline-flex;
+}
+.dialog-container .dialog-toggle {
+  display: none !important;
+}
+.dialog-container .dialog-toggle:checked + .dialog {
+  display: flex;
+}
+.dialog-container .dialog-toggle:checked + .dialog input, .dialog-container .dialog-toggle:checked + .dialog button {
+  z-index: 10;
+}
+.dialog-container .dialog-toggle:checked + .dialog .overlay {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.dialog-container .dialog-toggle:checked + .dialog .btn-green {
+  padding: 0.06rem 0.4rem;
+}
+.dialog-container .dialog-toggle:checked ~ .dialog-btn {
+  display: none;
+}
+
+.forget-password-container .form-list {
+  position: relative;
+}
+
+.consult-team-main .container {
+  padding-bottom: 3.12rem;
+  position: relative;
+}
+.consult-team-main .container > header {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  margin-right: 0.62rem;
+  margin-left: 0.62rem;
+  margin-top: 0.9rem;
+  right: 0;
+}
+.consult-team-main .container > header .link-orange, .consult-team-main .container > header .link-container a:not(.btn-green), .link-container .consult-team-main .container > header a:not(.btn-green), .consult-team-main .container > header .link-container .dialog-btn, .link-container .consult-team-main .container > header .dialog-btn {
+  display: flex;
+  padding-bottom: 0.31rem;
+  align-items: center;
+}
+.consult-team-main .container > header .link-orange img, .consult-team-main .container > header .link-container a:not(.btn-green) img, .link-container .consult-team-main .container > header a:not(.btn-green) img, .consult-team-main .container > header .link-container .dialog-btn img, .link-container .consult-team-main .container > header .dialog-btn img {
+  margin-right: 0.25rem;
+  width: 1.4rem;
+}
+.consult-team-main .container .department-section {
+  padding-top: 3.12rem;
+  margin-right: 0.62rem;
+  margin-left: 0.62rem;
+}
+.consult-team-main .container .department-section .department-section-header {
+  text-transform: uppercase;
+  background-color: #D95204;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 3.12rem;
+  border-radius: 0.31rem;
+  border: solid black 0.06rem;
+}
+.consult-team-main .container .department-section .department-section-header img {
+  height: 80%;
+  filter: invert(1);
+}
+.consult-team-main .container .department-section .department-section-header h2, .consult-team-main .container .department-section .department-section-header img {
+  padding: 0.62rem;
+}
+.consult-team-main .container .department-section .employee-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 1.56rem;
+}
+.consult-team-main .container .department-section .employee-list article {
+  width: 33.3333333333%;
+  border-radius: 0.31rem;
+  display: flex;
+}
+.consult-team-main .container .department-section .employee-list article:nth-child(n+4) {
+  margin-top: 1.56rem;
+}
+.consult-team-main .container .department-section .employee-list article header img {
+  object-fit: cover;
+  width: 9.4rem;
+  height: 9.4rem;
+}
+.consult-team-main .container .department-section .employee-list article section {
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.consult-team-main .container .department-section .employee-list article section p {
+  padding-top: 0.62rem;
+  padding-bottom: 0.62rem;
+  font-style: italic;
+}
+.consult-team-main .container .department-section .employee-list article section h5 {
+  font-size: 1.2em;
+}
+
+.consult-staff-main .container {
+  padding-top: 3.12rem;
+  padding-bottom: 3.12rem;
+}
+.consult-staff-main .container > section:not(.back-btn-container) {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid black 0.06rem;
+  box-shadow: 0 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.4rem;
+  padding: 5% 0;
+}
+.consult-staff-main .container > section:not(.back-btn-container), .consult-staff-main .container > section:not(.back-btn-container) .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right {
+  width: 90%;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .left {
+  width: 50%;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .left img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+  border-left: solid black 0.06rem;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right h2 {
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right > ul {
+  padding: 0 5% 5% 5%;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right > ul > li {
+  padding-top: 1.56rem;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .description {
+  white-space: pre-line;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .link-orange, .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .link-container a:not(.btn-green), .link-container .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li a:not(.btn-green), .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .link-container .dialog-btn, .link-container .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .dialog-btn {
+  cursor: pointer;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .btn-red, .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .btn-green {
+  font-size: 1rem;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .dialog-toggle:checked ~ .dialog-btn {
+  display: none;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right > ul > li header, .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .link-orange, .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .link-container a:not(.btn-green), .link-container .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li a:not(.btn-green), .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .link-container .dialog-btn, .link-container .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .dialog-btn {
+  display: flex;
+  padding-bottom: 0.31rem;
+  align-items: center;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right > ul > li header img, .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .link-orange img, .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .link-container a:not(.btn-green) img, .link-container .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li a:not(.btn-green) img, .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .link-container .dialog-btn img, .link-container .consult-staff-main .container > section:not(.back-btn-container) .right > ul > li .dialog-btn img {
+  margin-right: 0.25rem;
+  width: 1.4rem;
+}
+.consult-staff-main .container > section:not(.back-btn-container) .right > ul > li p {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.news-main {
+  background-color: #D95204;
+}
+.news-main .container {
+  padding-top: 3.12rem;
+  padding-bottom: 3.12rem;
+  display: flex;
+}
+.news-main .container .new-list, .news-main .container .new-section, .news-main .container .empty-news {
+  width: 70%;
+}
+.news-main .container .empty-news {
+  text-align: center;
+}
+.news-main .container .empty-news h2 {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  margin-bottom: 3.12rem;
+}
+.news-main .container .empty-news img {
+  width: 80%;
+}
+.news-main .container .new-section .back-btn-container {
+  padding-right: 1.56rem;
+  padding-left: 1.56rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+.news-main .container .new-section > section, .news-main .container .new-section > header {
+  margin-right: 1.56rem;
+  margin-left: 1.56rem;
+}
+.news-main .container .new-section header, .news-main .container .new-section .new-body {
+  background-color: white;
+}
+.news-main .container .new-section header {
+  position: relative;
+  border-radius: 0.62rem 0.62rem 0 0;
+}
+.news-main .container .new-section header aside {
+  bottom: 0.9rem;
+  left: 0.9rem;
+}
+.news-main .container .new-section header img {
+  max-height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.62rem;
+}
+.news-main .container .new-section .new-body {
+  position: relative;
+  padding: 1.56rem;
+}
+.news-main .container .new-section .new-body .link-container {
+  padding-right: 1.56rem;
+  padding-left: 1.56rem;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  display: flex;
+}
+.news-main .container .new-section .new-body .link-container a {
+  height: 100%;
+}
+.news-main .container .new-section .new-body .body {
+  white-space: pre-line;
+}
+.news-main .container .new-section .new-body aside {
+  color: #D95204;
+}
+.news-main .container .new-section .new-body h2 {
+  font-size: 2em;
+  margin-bottom: 1.25rem;
+}
+.news-main .container .new-section .new-body h3 {
+  margin-bottom: 0.31rem;
+}
+.news-main .container .news-aside {
+  width: 30%;
+  margin: 0 1.56rem 1.56rem 1.56rem;
+}
+.news-main .container .news-aside > section a {
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.56rem;
+  border: solid black 0.06rem;
+}
+.news-main .container .news-aside > section a img {
+  width: 1.3rem;
+  padding-right: 0.4rem;
+}
+.news-main .container .news-aside .filter-form .department-field h4, .news-main .container .news-aside .filter-form .submit-field button {
+  font-size: 1.15rem;
+}
+.news-main .container .news-aside .filter-form > ul > li {
+  margin-bottom: 1.56rem;
+  border: solid black 0.06rem;
+}
+.news-main .container .news-aside .filter-form .search-bar {
+  padding-right: 1.56rem;
+}
+.news-main .container .news-aside .filter-form .department-field {
+  padding: 0.9rem 1.56rem;
+  background-color: white;
+}
+.news-main .container .news-aside .filter-form .department-field header {
+  display: flex;
+  align-content: center;
+  padding-bottom: 0.9rem;
+}
+.news-main .container .news-aside .filter-form .department-field header img {
+  margin-right: 0.4em;
+  width: 1.3rem;
+}
+.news-main .container .news-aside .filter-form .department-field .department-list input[type=radio]:checked + label {
+  background-color: #D95204;
+  color: white;
+  border-radius: 0.31rem;
+  padding-left: 0.31rem;
+  padding-right: 0.31rem;
+}
+.news-main .container .news-aside .filter-form .submit-field button {
+  width: 100%;
+  height: 2.6rem;
+  cursor: pointer;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  padding: 0 1.56rem;
+  justify-content: center;
+}
+.news-main .container .news-aside .filter-form .submit-field button img {
+  height: 80%;
+  margin-top: -0.5rem;
+}
+
+.new-list article {
+  display: flex;
+  height: 15.6rem;
+  position: relative;
+  background-color: white;
+  color: black;
+  border-radius: 0.62rem;
+  margin: 0 1.56rem 1.56rem 1.56rem;
+}
+.new-list article header img {
+  height: 15.6rem;
+  width: 15.6rem;
+  object-fit: cover;
+  border-radius: 0.62rem 0 0 0.62rem;
+}
+.new-list article section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  width: 100%;
+}
+.new-list article section p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.link-container, .link-container a, .link-container .dialog-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-container .dialog-container {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+.link-container .dialog-container .dialog-btn {
+  height: 100% !important;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 1.56rem;
+}
+.link-container .dialog-container .dialog .btn-red, .link-container .dialog-container .dialog .btn-green {
+  font-size: 1rem;
+}
+.link-container .dialog-container .dialog .btn-red {
+  margin-left: 1.56rem;
+}
+.link-container a:not(.btn-green) img, .link-container .dialog-btn img {
+  width: 1.3rem;
+  padding-right: 0.4rem;
+}
+
+.actuality-article-dialog .btn-red {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.new-aside {
+  color: white;
+  position: absolute;
+  bottom: 0.31rem;
+  left: 0.31rem;
+}
+.new-aside li {
+  padding: 0.12rem 0.62rem;
+  border-radius: 0.31rem;
+  font-size: 0.8em;
+  margin-top: 0.31rem;
+  text-align: center;
+}
+.new-aside .not-visible {
+  background-color: #d00d0d;
+}
+.new-aside .createdAt {
+  background-color: #D95204;
+}
+
+.administration-container .link-orange, .administration-container .link-container a:not(.btn-green), .link-container .administration-container a:not(.btn-green), .administration-container .link-container .dialog-btn, .link-container .administration-container .dialog-btn, .administration-container .btn-yellow, .administration-container .add-form label {
+  display: flex;
+  align-items: center;
+}
+.administration-container .link-orange img, .administration-container .link-container a:not(.btn-green) img, .link-container .administration-container a:not(.btn-green) img, .administration-container .link-container .dialog-btn img, .link-container .administration-container .dialog-btn img, .administration-container .btn-yellow img, .administration-container .add-form label img {
+  width: 1.3rem;
+  padding-right: 0.4rem;
+}
+.administration-container > section {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3.12rem;
+  padding-bottom: 3.12rem;
+}
+.administration-container > section > nav {
+  height: 3.12rem;
+  background-color: #D95204;
+  border-radius: 0.31rem;
+  border: solid black 0.06rem;
+}
+.administration-container > section > nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.administration-container > section > nav ul li {
+  margin-left: 1.56rem;
+}
+.administration-container > section > nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+.administration-container > section > nav ul li h2 {
+  color: white;
+}
+.administration-container > section > section > h2 {
+  margin-top: 1.56rem;
+  margin-bottom: 0.62rem;
+}
+.administration-container > section > section .add-form {
+  margin-bottom: 1.56rem;
+  border: solid black 0.06rem;
+  padding: 2% 5%;
+}
+.administration-container > section > section .add-form li {
+  padding-top: 0;
+}
+.administration-container > section > section table {
+  width: 100%;
+  border-spacing: 0;
+}
+.administration-container > section > section table tr:not(:first-child) {
+  outline: solid black 0.06rem;
+}
+.administration-container > section > section table td {
+  padding: 0;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.administration-container > section > section table td:first-child {
+  width: 15rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.administration-container > section > section table .form, .administration-container > section > section table .form-only, .administration-container > section > section table .image-form .right, .image-form .administration-container > section > section table .right {
+  height: 100%;
+}
+.administration-container > section > section table .form form, .administration-container > section > section table .form-only form, .administration-container > section > section table .image-form .right form, .image-form .administration-container > section > section table .right form {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.administration-container > section > section table .form form li, .administration-container > section > section table .form-only form li, .administration-container > section > section table .image-form .right form li, .image-form .administration-container > section > section table .right form li {
+  padding-top: 0;
+}
+.administration-container > section > section table .delete form {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 0 !important;
+}
+.administration-container > section > section table .delete form .link-orange, .administration-container > section > section table .delete form .link-container a:not(.btn-green), .link-container .administration-container > section > section table .delete form a:not(.btn-green), .administration-container > section > section table .delete form .link-container .dialog-btn, .link-container .administration-container > section > section table .delete form .dialog-btn {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: helvetica, serif;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 73rem;
+}
+
+.search-icon {
+  background-image: url("../images/icons/search.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dashed-border {
+  border: dashed #F2B705 0.12rem;
+}
+
+.dashed-border-b, .home-latest-news .container .new-list hr {
+  border-top: none;
+  border-bottom: dashed #F2B705 0.12rem;
+}
+
+.dashed-border-lr {
+  border-right: dashed #F2B705 0.12rem;
+  border-left: dashed #F2B705 0.12rem;
+}
+
+.btn, .btn-green, .btn-red, .btn-white, .btn-yellow {
+  text-decoration: none;
+  font-weight: bold;
+  border: unset;
+  text-transform: uppercase;
+  display: block;
+  border: solid rgba(0, 0, 0, 0) 0.06rem;
+  transition: 0.3s;
+}
+
+.btn-yellow {
+  color: white;
+  background-color: #F2B705;
+}
+.btn-yellow:hover {
+  background-color: #D95204;
+  color: white;
+  border: solid white 0.06rem;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+}
+.btn-white:hover {
+  background-color: #F2B705;
+  border: solid black 0.06rem;
+}
+
+.btn-red {
+  background-color: #d32920;
+  color: white;
+  cursor: pointer;
+}
+.btn-red:hover {
+  background-color: #b3211a;
+  border: solid black 0.06rem;
+}
+
+.btn-green {
+  background-color: #27e127;
+  color: white;
+}
+.btn-green:hover {
+  background-color: #22c322;
+  border: solid black 0.06rem;
+}
+
+.search-bar {
+  height: 2.5rem;
+  display: flex;
+  margin: auto 0;
+  background-color: white;
+}
+.search-bar input {
+  width: 100%;
+  border: unset;
+  margin-left: 1.56rem;
+}
+.search-bar input:focus {
+  outline: none;
+}
+.search-bar button {
+  width: 2.5rem;
+  height: 100%;
+  border: none;
+  background-color: white;
+  padding-right: 3.12rem;
+  margin-left: 1.56rem;
+}
+.search-bar button:hover {
+  cursor: pointer;
+}
+
+.link-orange, .link-container a:not(.btn-green), .link-container .dialog-btn {
+  font-weight: bold;
+  color: #D95204;
+  text-transform: uppercase;
+}
+.link-orange:hover, .link-container a:hover:not(.btn-green), .link-container .dialog-btn:hover {
+  color: #F2B705;
+}
+
+.alert {
+  bottom: 0.31rem;
+  right: 0.31rem;
+  position: fixed;
+  z-index: 1;
+}
+.alert ul .success {
+  background-color: #25d525;
+}
+.alert ul .error {
+  background-color: #d00d0d;
+}
+.alert ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 0.31rem;
+  margin-bottom: 0.31rem;
+  color: white;
+  padding: 0.12rem 0.9rem;
+  box-shadow: 0.12rem 0.12rem 0.06rem 0 rgba(0, 0, 0, 0.75);
+  animation: fadeOut 2s forwards;
+}
+.alert ul li img {
+  height: 1.9rem;
+  padding-right: 0.9rem;
+  filter: invert(1);
+}
+.alert ul li p {
+  max-width: 15.6rem;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.back-btn {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 3.12rem;
+}
+.back-btn img {
+  margin-right: 0.4em;
+  filter: invert(1);
+  width: 1.3rem;
+}
+
+.back-btn-container {
+  margin-bottom: 1.56rem;
+  margin-right: 0.62rem;
+  margin-left: 0.62rem;
+}
+.back-btn-container a {
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

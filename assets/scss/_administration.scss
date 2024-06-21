@@ -1,0 +1,95 @@
+.administration-container{
+  .link-orange, .btn-yellow, .add-form label{
+    display: flex;
+    align-items: center;
+    img{
+      width: 1.3rem;
+      padding-right: .4rem;
+    }
+  }
+  > section{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 3.12rem;
+    padding-bottom: 3.12rem;
+    > nav {
+      height: 3.12rem;
+      background-color: $darkOrange;
+      border-radius: 0.31rem;
+      border: solid black 0.06rem;
+      ul{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        li{
+          margin-left: 1.56rem;
+          a{
+            color: white;
+            font-weight: bold;
+          }
+          h2{
+            color: white;
+
+          }
+        }
+      }
+    }
+    > section{
+
+      > h2{
+        margin-top: 1.56rem;
+        margin-bottom: 0.62rem;
+      }
+      .add-form{
+        margin-bottom: 1.56rem;
+        border: solid black 0.06rem;
+        padding: 2% 5%;
+        li{
+          padding-top: 0;
+        }
+      }
+      table{
+        width: 100%;
+        border-spacing: 0;
+        tr:not(:first-child){
+          outline: solid black .06rem;
+        }
+        td{
+
+          padding: 0;
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+
+        }
+        td:first-child{
+          width: 15rem;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        .form{
+          height: 100%;
+          form{
+            margin-top: auto;
+            margin-bottom: auto;
+            li{
+              padding-top: 0;
+            }
+          }
+        }
+        .delete{
+          form{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            margin-top: 0 !important;
+            .link-orange{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

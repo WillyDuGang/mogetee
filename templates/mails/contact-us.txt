@@ -1,0 +1,12 @@
+Bonjour,
+
+Un nouveau message a été reçu via le formulaire de contact de Moge Tee.
+
+Adresse e-mail de l'expéditeur : {email}
+Sujet : {subject}
+
+Message :
+{message}
+
+Cordialement,
+L'équipe de Moge Tee
