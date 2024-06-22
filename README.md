@@ -1,4 +1,6 @@
-# Moge Tee ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+# Moge Tee 
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
 Bienvenue sur le dépôt GitHub de Moge Tee, une plateforme de présentation pour un café spécialisé en bubble tea.
 ### Présentation
 Moge Tee est un site vitrine développé pour représenter un café de bubble tea. Ce projet a été conçu avec pour objectif de fournir aux utilisateurs une vue d'ensemble de l'établissement, d'afficher les actualités, les différents départements, ainsi que les membres du personnel. 
